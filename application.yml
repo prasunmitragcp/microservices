@@ -1,0 +1,21 @@
+server:
+  port: 9001 
+
+
+spring:
+  application: 
+    name: user-service 
+
+
+eureka: 
+  instance: 
+    hostname: localhost 
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" 
+    hystrix: 
+        stream: 
+          enabled: true
